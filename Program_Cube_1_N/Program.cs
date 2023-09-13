@@ -2,14 +2,26 @@
 // и выводит таблицу кубов чисел от 1 до N (включительно) каждое на новой строке.
 public class Answer
 {
-   static void ShowCube(int N)
+   static int ShowCube(int N)
     {
       // Введите свое решение ниже
-     Console.WriteLine($"N= {N}");
+     int cube_digit = 0;
        for (int i = 1; i <= N; i++)
          { 
-          Console.WriteLine($"{i*i*i} ");
+          cube_digit = i*i*i;
           } 
+          return cube_digit;
+    }
+    static void Print(int N)
+    {
+    int print_digit = 0;
+    for (int i = 1; i <= N; i++)
+    {
+        print_digit = i*i*i;
+        Console.WriteLine(print_digit);
+    }
+    
+        
     }
 
   // Не удаляйте и не меняйте метод Main! 
@@ -25,5 +37,6 @@ public class Answer
 
         // Не удаляйте строки ниже
         ShowCube(N);
+        Print(N);
     }
 }
